@@ -1,6 +1,6 @@
 services:
   cs2_modded_server:
-    image: cs2-modded-server
+    build: .
     container_name: cs2-modded-server
     env_file:
       - .env
@@ -22,4 +22,5 @@ services:
     # command: tail -F anything
 
 volumes:
+
   cs2-volume:
